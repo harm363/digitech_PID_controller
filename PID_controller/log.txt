@@ -1,0 +1,338 @@
+mkdir -p work
+ghdl -a  --workdir=work --ieee=standard -fsynopsys -fexplicit --std=93 \
+	PID_controller.vhdl uart.vhdl main.vhdl
+ghdl -r  --workdir=work -fsynopsys -fexplicit -Wbinding --std=93  testbench --wave=wave.ghw
+../../src/ieee/v93/numeric_std-body.vhdl:2179:7:@155ns:(assertion warning): NUMERIC_STD.TO_SIGNED: vector truncated
+main.vhdl:163:13:@280ns:(report note): serial transmitted: 86
+main.vhdl:164:13:@280ns:(report note): setpoint: 15
+main.vhdl:165:13:@280ns:(report note): serial recieved: -127
+main.vhdl:163:13:@550ns:(report note): serial transmitted: 0
+main.vhdl:164:13:@550ns:(report note): setpoint: 15
+main.vhdl:165:13:@550ns:(report note): serial recieved: 45
+main.vhdl:163:13:@820ns:(report note): serial transmitted: 0
+main.vhdl:164:13:@820ns:(report note): setpoint: 15
+main.vhdl:165:13:@820ns:(report note): serial recieved: 45
+main.vhdl:163:13:@1090ns:(report note): serial transmitted: 0
+main.vhdl:164:13:@1090ns:(report note): setpoint: 15
+main.vhdl:165:13:@1090ns:(report note): serial recieved: 45
+main.vhdl:163:13:@1360ns:(report note): serial transmitted: 0
+main.vhdl:164:13:@1360ns:(report note): setpoint: 15
+main.vhdl:165:13:@1360ns:(report note): serial recieved: 45
+main.vhdl:163:13:@1630ns:(report note): serial transmitted: 0
+main.vhdl:164:13:@1630ns:(report note): setpoint: 15
+main.vhdl:165:13:@1630ns:(report note): serial recieved: 45
+../../src/ieee/v93/numeric_std-body.vhdl:2179:7:@1775ns:(assertion warning): NUMERIC_STD.TO_SIGNED: vector truncated
+main.vhdl:163:13:@1900ns:(report note): serial transmitted: -127
+main.vhdl:164:13:@1900ns:(report note): setpoint: 15
+main.vhdl:165:13:@1900ns:(report note): serial recieved: 43
+main.vhdl:163:13:@2170ns:(report note): serial transmitted: 45
+main.vhdl:164:13:@2170ns:(report note): setpoint: 15
+main.vhdl:165:13:@2170ns:(report note): serial recieved: -45
+main.vhdl:163:13:@2440ns:(report note): serial transmitted: 45
+main.vhdl:164:13:@2440ns:(report note): setpoint: 15
+main.vhdl:165:13:@2440ns:(report note): serial recieved: -45
+main.vhdl:163:13:@2710ns:(report note): serial transmitted: 45
+main.vhdl:164:13:@2710ns:(report note): setpoint: 15
+main.vhdl:165:13:@2710ns:(report note): serial recieved: -45
+main.vhdl:163:13:@2980ns:(report note): serial transmitted: 45
+main.vhdl:164:13:@2980ns:(report note): setpoint: 15
+main.vhdl:165:13:@2980ns:(report note): serial recieved: -45
+main.vhdl:163:13:@3250ns:(report note): serial transmitted: 45
+main.vhdl:164:13:@3250ns:(report note): setpoint: 15
+main.vhdl:165:13:@3250ns:(report note): serial recieved: -45
+main.vhdl:163:13:@3520ns:(report note): serial transmitted: 43
+main.vhdl:164:13:@3520ns:(report note): setpoint: 15
+main.vhdl:165:13:@3520ns:(report note): serial recieved: -41
+../../src/ieee/v93/numeric_std-body.vhdl:2179:7:@3665ns:(assertion warning): NUMERIC_STD.TO_SIGNED: vector truncated
+main.vhdl:163:13:@3790ns:(report note): serial transmitted: -45
+main.vhdl:164:13:@3790ns:(report note): setpoint: 15
+main.vhdl:165:13:@3790ns:(report note): serial recieved: -121
+../../src/ieee/v93/numeric_std-body.vhdl:2179:7:@3935ns:(assertion warning): NUMERIC_STD.TO_SIGNED: vector truncated
+main.vhdl:163:13:@4060ns:(report note): serial transmitted: -45
+main.vhdl:164:13:@4060ns:(report note): setpoint: 15
+main.vhdl:165:13:@4060ns:(report note): serial recieved: -121
+../../src/ieee/v93/numeric_std-body.vhdl:2179:7:@4205ns:(assertion warning): NUMERIC_STD.TO_SIGNED: vector truncated
+main.vhdl:163:13:@4330ns:(report note): serial transmitted: -45
+main.vhdl:164:13:@4330ns:(report note): setpoint: 15
+main.vhdl:165:13:@4330ns:(report note): serial recieved: -121
+../../src/ieee/v93/numeric_std-body.vhdl:2179:7:@4475ns:(assertion warning): NUMERIC_STD.TO_SIGNED: vector truncated
+main.vhdl:163:13:@4600ns:(report note): serial transmitted: -45
+main.vhdl:164:13:@4600ns:(report note): setpoint: 15
+main.vhdl:165:13:@4600ns:(report note): serial recieved: -121
+../../src/ieee/v93/numeric_std-body.vhdl:2179:7:@4745ns:(assertion warning): NUMERIC_STD.TO_SIGNED: vector truncated
+main.vhdl:163:13:@4870ns:(report note): serial transmitted: -45
+main.vhdl:164:13:@4870ns:(report note): setpoint: 15
+main.vhdl:165:13:@4870ns:(report note): serial recieved: -121
+../../src/ieee/v93/numeric_std-body.vhdl:2179:7:@5015ns:(assertion warning): NUMERIC_STD.TO_SIGNED: vector truncated
+main.vhdl:163:13:@5140ns:(report note): serial transmitted: -41
+main.vhdl:164:13:@5140ns:(report note): setpoint: 15
+main.vhdl:165:13:@5140ns:(report note): serial recieved: 127
+../../src/ieee/v93/numeric_std-body.vhdl:2179:7:@5285ns:(assertion warning): NUMERIC_STD.TO_SIGNED: vector truncated
+main.vhdl:163:13:@5410ns:(report note): serial transmitted: -121
+main.vhdl:164:13:@5410ns:(report note): setpoint: 15
+main.vhdl:165:13:@5410ns:(report note): serial recieved: 31
+../../src/ieee/v93/numeric_std-body.vhdl:2179:7:@5555ns:(assertion warning): NUMERIC_STD.TO_SIGNED: vector truncated
+main.vhdl:163:13:@5680ns:(report note): serial transmitted: -121
+main.vhdl:164:13:@5680ns:(report note): setpoint: 15
+main.vhdl:165:13:@5680ns:(report note): serial recieved: 31
+../../src/ieee/v93/numeric_std-body.vhdl:2179:7:@5825ns:(assertion warning): NUMERIC_STD.TO_SIGNED: vector truncated
+main.vhdl:163:13:@5950ns:(report note): serial transmitted: -121
+main.vhdl:164:13:@5950ns:(report note): setpoint: 15
+main.vhdl:165:13:@5950ns:(report note): serial recieved: 31
+../../src/ieee/v93/numeric_std-body.vhdl:2179:7:@6095ns:(assertion warning): NUMERIC_STD.TO_SIGNED: vector truncated
+main.vhdl:163:13:@6220ns:(report note): serial transmitted: -121
+main.vhdl:164:13:@6220ns:(report note): setpoint: 15
+main.vhdl:165:13:@6220ns:(report note): serial recieved: 31
+../../src/ieee/v93/numeric_std-body.vhdl:2179:7:@6365ns:(assertion warning): NUMERIC_STD.TO_SIGNED: vector truncated
+main.vhdl:163:13:@6490ns:(report note): serial transmitted: -121
+main.vhdl:164:13:@6490ns:(report note): setpoint: 15
+main.vhdl:165:13:@6490ns:(report note): serial recieved: 31
+../../src/ieee/v93/numeric_std-body.vhdl:2179:7:@6635ns:(assertion warning): NUMERIC_STD.TO_SIGNED: vector truncated
+main.vhdl:163:13:@6760ns:(report note): serial transmitted: 127
+main.vhdl:164:13:@6760ns:(report note): setpoint: 15
+main.vhdl:165:13:@6760ns:(report note): serial recieved: 47
+main.vhdl:163:13:@7030ns:(report note): serial transmitted: 31
+main.vhdl:164:13:@7030ns:(report note): setpoint: 15
+main.vhdl:165:13:@7030ns:(report note): serial recieved: -17
+main.vhdl:163:13:@7300ns:(report note): serial transmitted: 31
+main.vhdl:164:13:@7300ns:(report note): setpoint: 15
+main.vhdl:165:13:@7300ns:(report note): serial recieved: -17
+main.vhdl:163:13:@7570ns:(report note): serial transmitted: 31
+main.vhdl:164:13:@7570ns:(report note): setpoint: 15
+main.vhdl:165:13:@7570ns:(report note): serial recieved: -17
+main.vhdl:163:13:@7840ns:(report note): serial transmitted: 31
+main.vhdl:164:13:@7840ns:(report note): setpoint: 15
+main.vhdl:165:13:@7840ns:(report note): serial recieved: -17
+main.vhdl:163:13:@8110ns:(report note): serial transmitted: 31
+main.vhdl:164:13:@8110ns:(report note): setpoint: 15
+main.vhdl:165:13:@8110ns:(report note): serial recieved: -17
+main.vhdl:163:13:@8380ns:(report note): serial transmitted: 47
+main.vhdl:164:13:@8380ns:(report note): setpoint: 15
+main.vhdl:165:13:@8380ns:(report note): serial recieved: -49
+main.vhdl:163:13:@8650ns:(report note): serial transmitted: -17
+main.vhdl:164:13:@8650ns:(report note): setpoint: 15
+main.vhdl:165:13:@8650ns:(report note): serial recieved: 79
+main.vhdl:163:13:@8920ns:(report note): serial transmitted: -17
+main.vhdl:164:13:@8920ns:(report note): setpoint: 15
+main.vhdl:165:13:@8920ns:(report note): serial recieved: 79
+main.vhdl:163:13:@9190ns:(report note): serial transmitted: -17
+main.vhdl:164:13:@9190ns:(report note): setpoint: 15
+main.vhdl:165:13:@9190ns:(report note): serial recieved: 79
+main.vhdl:163:13:@9460ns:(report note): serial transmitted: -17
+main.vhdl:164:13:@9460ns:(report note): setpoint: 15
+main.vhdl:165:13:@9460ns:(report note): serial recieved: 79
+main.vhdl:163:13:@9730ns:(report note): serial transmitted: -17
+main.vhdl:164:13:@9730ns:(report note): setpoint: 15
+main.vhdl:165:13:@9730ns:(report note): serial recieved: 79
+../../src/ieee/v93/numeric_std-body.vhdl:2179:7:@9875ns:(assertion warning): NUMERIC_STD.TO_SIGNED: vector truncated
+main.vhdl:163:13:@10us:(report note): serial transmitted: -49
+main.vhdl:164:13:@10us:(report note): setpoint: 15
+main.vhdl:165:13:@10us:(report note): serial recieved: -113
+../../src/ieee/v93/numeric_std-body.vhdl:2179:7:@10145ns:(assertion warning): NUMERIC_STD.TO_SIGNED: vector truncated
+main.vhdl:163:13:@10270ns:(report note): serial transmitted: 79
+main.vhdl:164:13:@10270ns:(report note): setpoint: 15
+main.vhdl:165:13:@10270ns:(report note): serial recieved: -113
+../../src/ieee/v93/numeric_std-body.vhdl:2179:7:@10415ns:(assertion warning): NUMERIC_STD.TO_SIGNED: vector truncated
+main.vhdl:163:13:@10540ns:(report note): serial transmitted: 79
+main.vhdl:164:13:@10540ns:(report note): setpoint: 15
+main.vhdl:165:13:@10540ns:(report note): serial recieved: -113
+../../src/ieee/v93/numeric_std-body.vhdl:2179:7:@10685ns:(assertion warning): NUMERIC_STD.TO_SIGNED: vector truncated
+main.vhdl:163:13:@10810ns:(report note): serial transmitted: 79
+main.vhdl:164:13:@10810ns:(report note): setpoint: 15
+main.vhdl:165:13:@10810ns:(report note): serial recieved: -113
+../../src/ieee/v93/numeric_std-body.vhdl:2179:7:@10955ns:(assertion warning): NUMERIC_STD.TO_SIGNED: vector truncated
+main.vhdl:163:13:@11080ns:(report note): serial transmitted: 79
+main.vhdl:164:13:@11080ns:(report note): setpoint: 15
+main.vhdl:165:13:@11080ns:(report note): serial recieved: -113
+../../src/ieee/v93/numeric_std-body.vhdl:2179:7:@11225ns:(assertion warning): NUMERIC_STD.TO_SIGNED: vector truncated
+main.vhdl:163:13:@11350ns:(report note): serial transmitted: 79
+main.vhdl:164:13:@11350ns:(report note): setpoint: 15
+main.vhdl:165:13:@11350ns:(report note): serial recieved: -113
+../../src/ieee/v93/numeric_std-body.vhdl:2179:7:@11495ns:(assertion warning): NUMERIC_STD.TO_SIGNED: vector truncated
+main.vhdl:163:13:@11620ns:(report note): serial transmitted: -113
+main.vhdl:164:13:@11620ns:(report note): setpoint: 15
+main.vhdl:165:13:@11620ns:(report note): serial recieved: 15
+../../src/ieee/v93/numeric_std-body.vhdl:2179:7:@11765ns:(assertion warning): NUMERIC_STD.TO_SIGNED: vector truncated
+main.vhdl:163:13:@11890ns:(report note): serial transmitted: -113
+main.vhdl:164:13:@11890ns:(report note): setpoint: 15
+main.vhdl:165:13:@11890ns:(report note): serial recieved: 15
+../../src/ieee/v93/numeric_std-body.vhdl:2179:7:@12035ns:(assertion warning): NUMERIC_STD.TO_SIGNED: vector truncated
+main.vhdl:163:13:@12160ns:(report note): serial transmitted: -113
+main.vhdl:164:13:@12160ns:(report note): setpoint: 15
+main.vhdl:165:13:@12160ns:(report note): serial recieved: 15
+../../src/ieee/v93/numeric_std-body.vhdl:2179:7:@12305ns:(assertion warning): NUMERIC_STD.TO_SIGNED: vector truncated
+main.vhdl:163:13:@12430ns:(report note): serial transmitted: -113
+main.vhdl:164:13:@12430ns:(report note): setpoint: 15
+main.vhdl:165:13:@12430ns:(report note): serial recieved: 15
+../../src/ieee/v93/numeric_std-body.vhdl:2179:7:@12575ns:(assertion warning): NUMERIC_STD.TO_SIGNED: vector truncated
+main.vhdl:163:13:@12700ns:(report note): serial transmitted: -113
+main.vhdl:164:13:@12700ns:(report note): setpoint: 15
+main.vhdl:165:13:@12700ns:(report note): serial recieved: 15
+../../src/ieee/v93/numeric_std-body.vhdl:2179:7:@12845ns:(assertion warning): NUMERIC_STD.TO_SIGNED: vector truncated
+main.vhdl:163:13:@12970ns:(report note): serial transmitted: -113
+main.vhdl:164:13:@12970ns:(report note): setpoint: 15
+main.vhdl:165:13:@12970ns:(report note): serial recieved: 15
+main.vhdl:163:13:@13240ns:(report note): serial transmitted: 15
+main.vhdl:164:13:@13240ns:(report note): setpoint: 15
+main.vhdl:165:13:@13240ns:(report note): serial recieved: 15
+main.vhdl:163:13:@13510ns:(report note): serial transmitted: 15
+main.vhdl:164:13:@13510ns:(report note): setpoint: 15
+main.vhdl:165:13:@13510ns:(report note): serial recieved: 15
+main.vhdl:163:13:@13780ns:(report note): serial transmitted: 15
+main.vhdl:164:13:@13780ns:(report note): setpoint: 15
+main.vhdl:165:13:@13780ns:(report note): serial recieved: 15
+main.vhdl:163:13:@14050ns:(report note): serial transmitted: 15
+main.vhdl:164:13:@14050ns:(report note): setpoint: 15
+main.vhdl:165:13:@14050ns:(report note): serial recieved: 15
+main.vhdl:163:13:@14320ns:(report note): serial transmitted: 15
+main.vhdl:164:13:@14320ns:(report note): setpoint: 15
+main.vhdl:165:13:@14320ns:(report note): serial recieved: 15
+main.vhdl:163:13:@14590ns:(report note): serial transmitted: 15
+main.vhdl:164:13:@14590ns:(report note): setpoint: 15
+main.vhdl:165:13:@14590ns:(report note): serial recieved: 15
+main.vhdl:163:13:@14860ns:(report note): serial transmitted: 15
+main.vhdl:164:13:@14860ns:(report note): setpoint: 15
+main.vhdl:165:13:@14860ns:(report note): serial recieved: 15
+main.vhdl:163:13:@15130ns:(report note): serial transmitted: 15
+main.vhdl:164:13:@15130ns:(report note): setpoint: 15
+main.vhdl:165:13:@15130ns:(report note): serial recieved: 15
+main.vhdl:163:13:@15400ns:(report note): serial transmitted: 15
+main.vhdl:164:13:@15400ns:(report note): setpoint: 15
+main.vhdl:165:13:@15400ns:(report note): serial recieved: 15
+main.vhdl:163:13:@15670ns:(report note): serial transmitted: 15
+main.vhdl:164:13:@15670ns:(report note): setpoint: 15
+main.vhdl:165:13:@15670ns:(report note): serial recieved: 15
+main.vhdl:163:13:@15940ns:(report note): serial transmitted: 15
+main.vhdl:164:13:@15940ns:(report note): setpoint: 15
+main.vhdl:165:13:@15940ns:(report note): serial recieved: 15
+main.vhdl:163:13:@16210ns:(report note): serial transmitted: 15
+main.vhdl:164:13:@16210ns:(report note): setpoint: 15
+main.vhdl:165:13:@16210ns:(report note): serial recieved: 15
+main.vhdl:163:13:@16480ns:(report note): serial transmitted: 15
+main.vhdl:164:13:@16480ns:(report note): setpoint: 15
+main.vhdl:165:13:@16480ns:(report note): serial recieved: 15
+main.vhdl:163:13:@16750ns:(report note): serial transmitted: 15
+main.vhdl:164:13:@16750ns:(report note): setpoint: 15
+main.vhdl:165:13:@16750ns:(report note): serial recieved: 15
+main.vhdl:163:13:@17020ns:(report note): serial transmitted: 15
+main.vhdl:164:13:@17020ns:(report note): setpoint: 15
+main.vhdl:165:13:@17020ns:(report note): serial recieved: 15
+main.vhdl:163:13:@17290ns:(report note): serial transmitted: 15
+main.vhdl:164:13:@17290ns:(report note): setpoint: 15
+main.vhdl:165:13:@17290ns:(report note): serial recieved: 15
+main.vhdl:163:13:@17560ns:(report note): serial transmitted: 15
+main.vhdl:164:13:@17560ns:(report note): setpoint: 15
+main.vhdl:165:13:@17560ns:(report note): serial recieved: 15
+main.vhdl:163:13:@17830ns:(report note): serial transmitted: 15
+main.vhdl:164:13:@17830ns:(report note): setpoint: 15
+main.vhdl:165:13:@17830ns:(report note): serial recieved: 15
+main.vhdl:163:13:@18100ns:(report note): serial transmitted: 15
+main.vhdl:164:13:@18100ns:(report note): setpoint: 15
+main.vhdl:165:13:@18100ns:(report note): serial recieved: 15
+main.vhdl:163:13:@18370ns:(report note): serial transmitted: 15
+main.vhdl:164:13:@18370ns:(report note): setpoint: 15
+main.vhdl:165:13:@18370ns:(report note): serial recieved: 15
+main.vhdl:163:13:@18640ns:(report note): serial transmitted: 15
+main.vhdl:164:13:@18640ns:(report note): setpoint: 15
+main.vhdl:165:13:@18640ns:(report note): serial recieved: 15
+main.vhdl:163:13:@18910ns:(report note): serial transmitted: 15
+main.vhdl:164:13:@18910ns:(report note): setpoint: 15
+main.vhdl:165:13:@18910ns:(report note): serial recieved: 15
+main.vhdl:163:13:@19180ns:(report note): serial transmitted: 15
+main.vhdl:164:13:@19180ns:(report note): setpoint: 15
+main.vhdl:165:13:@19180ns:(report note): serial recieved: 15
+main.vhdl:163:13:@19450ns:(report note): serial transmitted: 15
+main.vhdl:164:13:@19450ns:(report note): setpoint: 15
+main.vhdl:165:13:@19450ns:(report note): serial recieved: 15
+main.vhdl:163:13:@19720ns:(report note): serial transmitted: 15
+main.vhdl:164:13:@19720ns:(report note): setpoint: 15
+main.vhdl:165:13:@19720ns:(report note): serial recieved: 15
+main.vhdl:163:13:@19990ns:(report note): serial transmitted: 15
+main.vhdl:164:13:@19990ns:(report note): setpoint: 15
+main.vhdl:165:13:@19990ns:(report note): serial recieved: 15
+main.vhdl:163:13:@20260ns:(report note): serial transmitted: 15
+main.vhdl:164:13:@20260ns:(report note): setpoint: 15
+main.vhdl:165:13:@20260ns:(report note): serial recieved: 15
+main.vhdl:163:13:@20530ns:(report note): serial transmitted: 15
+main.vhdl:164:13:@20530ns:(report note): setpoint: 15
+main.vhdl:165:13:@20530ns:(report note): serial recieved: 15
+main.vhdl:163:13:@20800ns:(report note): serial transmitted: 15
+main.vhdl:164:13:@20800ns:(report note): setpoint: 15
+main.vhdl:165:13:@20800ns:(report note): serial recieved: 15
+main.vhdl:163:13:@21070ns:(report note): serial transmitted: 15
+main.vhdl:164:13:@21070ns:(report note): setpoint: 15
+main.vhdl:165:13:@21070ns:(report note): serial recieved: 15
+main.vhdl:163:13:@21340ns:(report note): serial transmitted: 15
+main.vhdl:164:13:@21340ns:(report note): setpoint: 15
+main.vhdl:165:13:@21340ns:(report note): serial recieved: 15
+main.vhdl:163:13:@21610ns:(report note): serial transmitted: 15
+main.vhdl:164:13:@21610ns:(report note): setpoint: 15
+main.vhdl:165:13:@21610ns:(report note): serial recieved: 15
+main.vhdl:163:13:@21880ns:(report note): serial transmitted: 15
+main.vhdl:164:13:@21880ns:(report note): setpoint: 15
+main.vhdl:165:13:@21880ns:(report note): serial recieved: 15
+main.vhdl:163:13:@22150ns:(report note): serial transmitted: 15
+main.vhdl:164:13:@22150ns:(report note): setpoint: 15
+main.vhdl:165:13:@22150ns:(report note): serial recieved: 15
+main.vhdl:163:13:@22420ns:(report note): serial transmitted: 15
+main.vhdl:164:13:@22420ns:(report note): setpoint: 15
+main.vhdl:165:13:@22420ns:(report note): serial recieved: 15
+main.vhdl:163:13:@22690ns:(report note): serial transmitted: 15
+main.vhdl:164:13:@22690ns:(report note): setpoint: 15
+main.vhdl:165:13:@22690ns:(report note): serial recieved: 15
+main.vhdl:163:13:@22960ns:(report note): serial transmitted: 15
+main.vhdl:164:13:@22960ns:(report note): setpoint: 15
+main.vhdl:165:13:@22960ns:(report note): serial recieved: 15
+main.vhdl:163:13:@23230ns:(report note): serial transmitted: 15
+main.vhdl:164:13:@23230ns:(report note): setpoint: 15
+main.vhdl:165:13:@23230ns:(report note): serial recieved: 15
+main.vhdl:163:13:@23500ns:(report note): serial transmitted: 15
+main.vhdl:164:13:@23500ns:(report note): setpoint: 15
+main.vhdl:165:13:@23500ns:(report note): serial recieved: 15
+main.vhdl:163:13:@23770ns:(report note): serial transmitted: 15
+main.vhdl:164:13:@23770ns:(report note): setpoint: 15
+main.vhdl:165:13:@23770ns:(report note): serial recieved: 15
+main.vhdl:163:13:@24040ns:(report note): serial transmitted: 15
+main.vhdl:164:13:@24040ns:(report note): setpoint: 15
+main.vhdl:165:13:@24040ns:(report note): serial recieved: 15
+main.vhdl:163:13:@24310ns:(report note): serial transmitted: 15
+main.vhdl:164:13:@24310ns:(report note): setpoint: 15
+main.vhdl:165:13:@24310ns:(report note): serial recieved: 15
+main.vhdl:163:13:@24580ns:(report note): serial transmitted: 15
+main.vhdl:164:13:@24580ns:(report note): setpoint: 15
+main.vhdl:165:13:@24580ns:(report note): serial recieved: 15
+main.vhdl:163:13:@24850ns:(report note): serial transmitted: 15
+main.vhdl:164:13:@24850ns:(report note): setpoint: 15
+main.vhdl:165:13:@24850ns:(report note): serial recieved: 15
+main.vhdl:163:13:@25120ns:(report note): serial transmitted: 15
+main.vhdl:164:13:@25120ns:(report note): setpoint: 15
+main.vhdl:165:13:@25120ns:(report note): serial recieved: 15
+main.vhdl:163:13:@25390ns:(report note): serial transmitted: 15
+main.vhdl:164:13:@25390ns:(report note): setpoint: 15
+main.vhdl:165:13:@25390ns:(report note): serial recieved: 15
+main.vhdl:163:13:@25660ns:(report note): serial transmitted: 15
+main.vhdl:164:13:@25660ns:(report note): setpoint: 15
+main.vhdl:165:13:@25660ns:(report note): serial recieved: 15
+main.vhdl:163:13:@25930ns:(report note): serial transmitted: 15
+main.vhdl:164:13:@25930ns:(report note): setpoint: 15
+main.vhdl:165:13:@25930ns:(report note): serial recieved: 15
+main.vhdl:163:13:@26200ns:(report note): serial transmitted: 15
+main.vhdl:164:13:@26200ns:(report note): setpoint: 15
+main.vhdl:165:13:@26200ns:(report note): serial recieved: 15
+main.vhdl:163:13:@26470ns:(report note): serial transmitted: 15
+main.vhdl:164:13:@26470ns:(report note): setpoint: 15
+main.vhdl:165:13:@26470ns:(report note): serial recieved: 15
+main.vhdl:163:13:@26740ns:(report note): serial transmitted: 15
+main.vhdl:164:13:@26740ns:(report note): setpoint: 15
+main.vhdl:165:13:@26740ns:(report note): serial recieved: 15
+main.vhdl:163:13:@27010ns:(report note): serial transmitted: 15
+main.vhdl:164:13:@27010ns:(report note): setpoint: 15
+main.vhdl:165:13:@27010ns:(report note): serial recieved: 15
+main.vhdl:163:13:@27280ns:(report note): serial transmitted: 15
+main.vhdl:164:13:@27280ns:(report note): setpoint: 15
+main.vhdl:165:13:@27280ns:(report note): serial recieved: 15
+main.vhdl:176:5:@27280ns:(report failure): end of sim
+/usr/bin/ghdl-mcode:error: report failed
+in process .testbench(main_tb).main
+  from: process work.testbench(main_tb).main at main.vhdl:176
+/usr/bin/ghdl-mcode:error: simulation failed
